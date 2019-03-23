@@ -1,0 +1,27 @@
+package Base
+
+import "fmt"
+
+type Integer int
+//(a Integer) Less(b Integer) ==>  a.less()  返回值bool
+func (a Integer) Less(b Integer) bool {
+	return a < b
+}
+
+func (a *Integer) Add(b Integer) {
+	*a += b
+}
+
+func main() {
+	var a Integer = 1
+	if a.Less(0) {
+		fmt.Println(a, "Less 2")
+	} else {
+			fmt.Println(a,"> 2")
+	}
+	fmt.Printf("\n")
+
+	var a1 Integer = 1
+	a1.Add(2)
+	fmt.Println("a1 =", a1)
+}

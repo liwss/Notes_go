@@ -1,0 +1,7 @@
+ERROR: 2019/03/22 10:18:53 dmeo12.go:45: Something has failed
+ERROR: 2019/03/22 10:19:08 dmeo12.go:45: Something has failed
+ERROR: 2019/03/22 10:19:10 dmeo12.go:45: Something has failed
+TRACE: 2019/03/22 10:21:33 dmeo12.go:41: I have something standard to say
+INFO: 2019/03/22 10:21:34 dmeo12.go:42: Special Information
+WARNING: 2019/03/22 10:21:34 dmeo12.go:43: There is something you need to know about
+ERROR: 2019/03/22 10:21:34 dmeo12.go:44: Something has failed
