@@ -12,6 +12,7 @@ type timeHandler struct {
 
 func (th *timeHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	tm := time.Now().Format(th.format)
+	time.Sleep(time.Duration(5) * time.Second)
 	w.Write([]byte("The time is: " + tm))
 }
 

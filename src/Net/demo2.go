@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -14,9 +15,13 @@ func main() {
 		return
 	}
 	req.Header.Add("User-Agent", "Gobook Custom User-Agent")
-	client := &http.Client{}
+	client := &http.Client{Timeout: time.Second * 3}
 	resp, err := client.Do(req)
-	response, err := ioutil.ReadAll(resp.Body)
-	defer resp.Body.Close()
-	fmt.Println(string(response))
+	if err == nil {
+		response, _ := ioutil.ReadAll(resp.Body)
+		fmt.Println(string(response))
+		defer resp.Body.Close()
+	}
+	log.Println("ERROR:", err)
+
 }
