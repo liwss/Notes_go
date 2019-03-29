@@ -2,5 +2,16 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/envoyproxy/go-control-plane" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gogo/googleapis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/gogo/protobuf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang/glog" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/golang/mock" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/grpc/grpc-go" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/lyft/protoc-gen-validate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/google.golang.org/genproto" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/google.golang.org/grpc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/google.golang.org/net" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/google.golang.org/text" vcs="Git" />
   </component>
 </project>
