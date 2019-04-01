@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package lws;
+
+message String {
+    string value = 1;
+}
+
+service HelloService {
+    rpc Hello (String) returns (String);    //RPC对象的hello方法
+    rpc channel (stream String) returns (stream String);    //RPC对象的channel方法，用于双向流通信
+}
+
+//protoc --go_out=plugins=grpc:. hello.proto  生成代码命令
