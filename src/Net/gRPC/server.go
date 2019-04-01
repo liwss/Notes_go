@@ -8,6 +8,8 @@ import (
 	"net"
 )
 
+/*gRPC server*/
+
 type HelloServiceImpl struct{}
 
 func (p *HelloServiceImpl) Hello(ctx context.Context, args *lws.String) (*lws.String, error) {
